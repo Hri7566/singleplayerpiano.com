@@ -1365,11 +1365,7 @@ $(function () {
   }
 
   var wssport = 8443;
-  if (window.location.hostname === "localhost") {
-    var gClient = new Client("");
-  } else {
-    var gClient = new Client('');
-  }
+  var gClient = new Client("wss://www.singleplayerpiano.com");
   gClient.stop();
   if (loginInfo) {
     gClient.setLoginInfo(loginInfo);
