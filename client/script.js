@@ -4680,6 +4680,7 @@ $(function () {
 
 
   // gClient.start();
+  gClient.emit('status', 'Singleplayer mode');
 });
 
 
