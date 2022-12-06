@@ -1386,7 +1386,8 @@ $(function () {
     if (count > 0) {
       document.title = "Piano (" + count + ")";
     } else {
-      document.title = "Multiplayer Piano";
+      // document.title = "Multiplayer Piano";
+      this.document.title = "Singleplayer Piano"
     }
   });
 
