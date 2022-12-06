@@ -4679,7 +4679,7 @@ $(function () {
 
 
 
-  gClient.start();
+  // gClient.start();
 });
 
 
