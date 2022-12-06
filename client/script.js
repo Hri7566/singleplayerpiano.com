@@ -1366,7 +1366,6 @@ $(function () {
 
   var wssport = 8443;
   var gClient = new Client("wss://www.singleplayerpiano.com");
-  gClient.stop();
   if (loginInfo) {
     gClient.setLoginInfo(loginInfo);
   }
@@ -1414,15 +1413,16 @@ $(function () {
   // Show moderator buttons
   (function () {
     gClient.on("hi", function (msg) {
-      if (gClient.permissions.clearChat) {
-        $("#clearchat-btn").show();
-      }
-      if (gClient.permissions.vanish) {
-        $("#vanish-btn").show();
-      } else {
-        $("#vanish-btn").hide();
-      }
-    });
+      gClient.stop();
+    //   if (gClient.permissions.clearChat) {
+    //     $("#clearchat-btn").show();
+    //   }
+    //   if (gClient.permissions.vanish) {
+    //     $("#vanish-btn").show();
+    //   } else {
+    //     $("#vanish-btn").hide();
+    //   }
+    // });
   })();
 
   var participantTouchhandler; //declare this outside of the smaller functions so it can be used below and setup later
