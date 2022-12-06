@@ -1414,15 +1414,15 @@ $(function () {
   (function () {
     gClient.on("hi", function (msg) {
       gClient.stop();
-    //   if (gClient.permissions.clearChat) {
-    //     $("#clearchat-btn").show();
-    //   }
-    //   if (gClient.permissions.vanish) {
-    //     $("#vanish-btn").show();
-    //   } else {
-    //     $("#vanish-btn").hide();
-    //   }
-    // });
+      // if (gClient.permissions.clearChat) {
+      //   $("#clearchat-btn").show();
+      // }
+      // if (gClient.permissions.vanish) {
+      //   $("#vanish-btn").show();
+      // } else {
+      //   $("#vanish-btn").hide();
+      // }
+    });
   })();
 
   var participantTouchhandler; //declare this outside of the smaller functions so it can be used below and setup later
